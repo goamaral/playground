@@ -58,3 +58,11 @@ type Language struct {
 	Code string `gorm:"primarykey"`
 	Name string
 }
+
+type Trigger struct {
+	Base
+}
+
+type Base struct {
+	ID string `gorm:"primaryKey;autoIncrement:false;type:uuid" json:"id"`
+}
